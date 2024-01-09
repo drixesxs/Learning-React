@@ -97,4 +97,14 @@ const personAccount = {
     }
 }
 
-console.log(personAccount.accountInfo())
+function signup (iden){
+    for (const user in users){
+        if (users[user]._id == iden){
+            console.log("User exists")
+        }else{
+            users.push(iden)
+        }
+    }
+}
+
+signup('ghderc')
