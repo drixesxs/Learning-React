@@ -97,14 +97,37 @@ const personAccount = {
     }
 }
 
-function signup (iden){
-    for (const user in users){
-        if (users[user]._id == iden){
-            console.log("User exists")
-        }else{
-            users.push(iden)
+
+
+function checker(iden) {
+    let userExists = false;
+
+    for (const user of users) {
+        if (user._id === iden) {
+            userExists = true;
+            console.log("User exists");
+            break;
         }
+    }
+
+    if (!userExists) {
+        signup(iden, 'timi', 'timi@timi.com', '24455', '09/09/2021 10:50 AM', false);
     }
 }
 
-signup('ghderc')
+function signup(iden, username, email, password, createdAt, isLoggedIn = false) {
+    users.push({
+        _id: iden,
+        username: username,
+        email: email,
+        password: password,
+        createdAt: createdAt,
+        isLoggedIn: isLoggedIn,
+    });
+    console.log('User added to database');
+}
+
+// Example usage:
+checker('ab12ex');  // Existing user, should print "User exists"
+checker('newUserId');  // Non-existing user, should add a new user and print "User added to database"
+console.log(users)
