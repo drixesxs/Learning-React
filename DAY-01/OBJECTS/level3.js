@@ -129,5 +129,6 @@ function signup(iden, username, email, password, createdAt, isLoggedIn = false) 
 
 // Example usage:
 checker('ab12ex');  // Existing user, should print "User exists"
-checker('newUserId');  // Non-existing user, should add a new user and print "User added to database"
+checker('newUserId');
+checker('ygouhv')  // Non-existing user, should add a new user and print "User added to database"
 console.log(users)
