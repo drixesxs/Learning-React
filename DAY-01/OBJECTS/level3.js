@@ -124,7 +124,7 @@ function signup(iden, username, email, password, createdAt, isLoggedIn = false) 
         createdAt: createdAt,
         isLoggedIn: isLoggedIn,
     });
-    console.log('User added to database');
+    console.log(`User ${iden} added to database`);
 }
 
 // Example usage:
