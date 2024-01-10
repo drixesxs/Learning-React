@@ -17,7 +17,7 @@ const users = {
         email: 'daniel@daniel.com',
         skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
         age: 30,
-        isLoggedIn: true,
+        isLoggedIn: false,
         points: 50
     },
     Daniel: {
