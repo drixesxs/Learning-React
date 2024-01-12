@@ -1,5 +1,5 @@
 //function for getting your fullname
-/*function fullName(firstName, lastName){
+function fullName(firstName, lastName){
     return `${firstName} ${lastName}`
 }
 console.log(fullName('Timileyin', 'Ogunjimi'))
@@ -21,7 +21,7 @@ function celciustoFah(celcius){
     console.log(`Temprature in fahrenheit is ${fahrenheit}`)
 }
 
-*/
+
 
 function getBMI(weight, height){
     const BMI = weight / (height * height)
@@ -40,3 +40,18 @@ function getBMI(weight, height){
 }
 
 getBMI(52, 1.7)
+
+
+
+function checkSeason(month) {
+    if (month >= 3 && month <= 5) {
+      return "Spring";
+    } else if (month >= 6 && month <= 8) {
+      return "Summer";
+    } else if (month >= 9 && month <= 11) {
+      return "Autumn";
+    } else {
+      return "Winter";
+    }
+  }
+  
