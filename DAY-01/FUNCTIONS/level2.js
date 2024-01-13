@@ -25,3 +25,14 @@ function solveQuadratic(a, b, c) {
 
 console.log(solveQuadratic()); // { 0: "Not a quadratic equation" }
 console.log(solveQuadratic(1, 4, 4)); // { root1: -2, root2: -2 }
+
+
+function printArray(arr) {
+    for (const value of arr) {
+        console.log(value);
+    }
+}
+
+// Example usage:
+const myArray = [1, 2, 3, "hello", true];
+printArray(myArray);
