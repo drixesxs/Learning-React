@@ -52,3 +52,15 @@ function showDateTime() {
 
 // Example usage:
 showDateTime(); // Output: 08/01/2020 04:08
+
+
+function swapValues(x, y) {
+    const temp = x;
+    x = y;
+    y = temp;
+    console.log(`x => ${x}, y => ${y}`);
+}
+
+// Example usage:
+swapValues(3, 4); // Output: x => 4, y => 3
+swapValues(4, 5); // Output: x => 5, y => 4
