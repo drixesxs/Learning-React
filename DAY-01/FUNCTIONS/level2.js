@@ -64,3 +64,16 @@ function swapValues(x, y) {
 // Example usage:
 swapValues(3, 4); // Output: x => 4, y => 3
 swapValues(4, 5); // Output: x => 5, y => 4
+
+
+function reverseArray(NewArr){
+    const RevArr = []
+    const end = NewArr.length - 1
+    for (i = end; i >= 0; i-- ){
+        RevArr.push(NewArr[i])
+    }
+    console.log(RevArr)
+}
+
+reverseArray([1,2,3,4,5])
+reverseArray(['A','B','C','D','E'])
