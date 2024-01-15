@@ -34,8 +34,8 @@ function printArray(arr) {
 }
 
 // Example usage:
-const myArray = [1, 2, 3, "hello", true];
-printArray(myArray);
+const Array = [1, 2, 3, "hello", true];
+printArray(Array);
 
 
 
@@ -87,3 +87,13 @@ function capitalizeArray(arr) {
 const originalArray = ['apple', 'banana', 'cherry'];
 const capitalizedArray = capitalizeArray(originalArray);
 console.log(capitalizedArray); // Output: ['Apple', 'Banana', 'Cherry']
+
+
+function addItem(arr, newItem) {
+    return [...arr, newItem];
+}
+
+// Example usage:
+const myArray = [1, 2, 3];
+const updatedArray = addItem(myArray, 4);
+console.log(updatedArray); // Output: [1, 2, 3, 4]
