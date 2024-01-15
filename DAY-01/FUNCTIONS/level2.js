@@ -77,3 +77,13 @@ function reverseArray(NewArr){
 
 reverseArray([1,2,3,4,5])
 reverseArray(['A','B','C','D','E'])
+
+
+function capitalizeArray(arr) {
+    return arr.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+}
+
+// Example usage:
+const originalArray = ['apple', 'banana', 'cherry'];
+const capitalizedArray = capitalizeArray(originalArray);
+console.log(capitalizedArray); // Output: ['Apple', 'Banana', 'Cherry']
