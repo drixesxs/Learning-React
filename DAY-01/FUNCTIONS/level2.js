@@ -97,3 +97,43 @@ function addItem(arr, newItem) {
 const myArray = [1, 2, 3];
 const updatedArray = addItem(myArray, 4);
 console.log(updatedArray); // Output: [1, 2, 3, 4]
+
+function removeItem(arr, index) {
+    if (index >= 0 && index < arr.length) {
+        arr.splice(index, 1);
+    }
+    return arr;
+}
+
+// Example usage:
+const myArray2 = [1, 2, 3, 4];
+const updatedArray2 = removeItem(myArray, 1); // Remove item at index 1
+console.log(updatedArray); // Output: [1, 3, 4]
+
+
+
+function evensAndOdds(num) {
+    if (num < 0) {
+        return "Please provide a positive integer.";
+    }
+
+    let evenCount = 0;
+    let oddCount = 0;
+
+    while (num > 0) {
+        const digit = num % 10;
+        if (digit % 2 === 0) {
+            evenCount++;
+        } else {
+            oddCount++;
+        }
+        num = Math.floor(num / 10);
+    }
+
+    return { even: evenCount, odd: oddCount };
+}
+
+// Example usage:
+const number = 123456;
+const result = evensAndOdds(number);
+console.log(result); // Output: { even: 3, odd: 3 }
