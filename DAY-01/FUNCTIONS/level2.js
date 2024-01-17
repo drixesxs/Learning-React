@@ -137,3 +137,30 @@ function evensAndOdds(num) {
 const number = 123456;
 const result = evensAndOdds(number);
 console.log(result); // Output: { even: 3, odd: 3 }
+
+
+function evensAndOdds(num) {
+    if (num <= 0) {
+        return "Please provide a positive integer.";
+    }
+
+    let evenCount = 0;
+    let oddCount = 0;
+
+    while (num > 0) {
+        const digit = num % 10;
+        if (digit % 2 === 0) {
+            evenCount++;
+        } else {
+            oddCount++;
+        }
+        num = Math.floor(num / 10);
+    }
+
+    return `The number of even digits is **${evenCount}** and the number of odd digits is **${oddCount}**.`;
+}
+
+// Example usage:
+const number = 123456;
+const result = evensAndOdds(number);
+console.log(result); // Output: The number of even digits is 3 and the number of odd digits is 3.
