@@ -161,6 +161,6 @@ function evensAndOdds(num) {
 }
 
 // Example usage:
-const number = 123456;
-const result = evensAndOdds(number);
-console.log(result); // Output: The number of even digits is 3 and the number of odd digits is 3.
+const number2 = 123456;
+const result2 = evensAndOdds(number2);
+console.log(result2); // Output: The number of even digits is 3 and the number of odd digits is 3.
