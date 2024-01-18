@@ -174,3 +174,17 @@ function sum(...args) {
 console.log(sum(1, 2, 3)); // Output: 6
 console.log(sum(4, 5, 6, 7)); // Output: 22
 console.log(sum(10)); // Output: 10
+
+
+function userIdGenerator() {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    for (let i = 0; i < 7; i++) {
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return result;
+}
+
+// Example usage:
+const id = userIdGenerator();
+console.log(id); // Output: a5Bf9Gh
