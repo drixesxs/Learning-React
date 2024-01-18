@@ -164,3 +164,13 @@ function evensAndOdds(num) {
 const number2 = 123456;
 const result2 = evensAndOdds(number2);
 console.log(result2); // Output: The number of even digits is 3 and the number of odd digits is 3.
+
+
+function sum(...args) {
+    return args.reduce((total, num) => total + num, 0);
+}
+
+// Example usage:
+console.log(sum(1, 2, 3)); // Output: 6
+console.log(sum(4, 5, 6, 7)); // Output: 22
+console.log(sum(10)); // Output: 10
