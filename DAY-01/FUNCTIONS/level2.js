@@ -188,3 +188,4 @@ function userIdGenerator() {
 // Example usage:
 const id = userIdGenerator();
 console.log(id); // Output: a5Bf9Gh
+
