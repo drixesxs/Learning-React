@@ -50,3 +50,18 @@ function generateColors(type, num) {
 console.log(generateColors('hexa', 3)); // Output: ['#a3e12f', '#03ed55', '#eb3d2b']
 console.log(generateColors('hexa', 1)); // Output: '#b334ef'
 console.log(generateColors('rgb', 2)); // Output: ['rgb(123, 45, 67)', 'rgb(89, 12, 34)']
+
+
+
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+// Example usage:
+const myArray = [1, 2, 3, 4, 5];
+const shuffledArray = shuffleArray(myArray);
+console.log(shuffledArray); // Output: [3, 1, 2, 5, 4]
