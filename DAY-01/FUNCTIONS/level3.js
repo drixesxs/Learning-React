@@ -65,3 +65,25 @@ function shuffleArray(arr) {
 const myArray = [1, 2, 3, 4, 5];
 const shuffledArray = shuffleArray(myArray);
 console.log(shuffledArray); // Output: [3, 1, 2, 5, 4]
+
+
+
+
+function factorial(num) {
+    if (num < 0) {
+        return "Please provide a non-negative integer.";
+    } else if (num === 0) {
+        return 1;
+    } else {
+        let result = 1;
+        for (let i = 1; i <= num; i++) {
+            result *= i;
+        }
+        return result;
+    }
+}
+
+// Example usage:
+const number = 5;
+const result = factorial(number);
+console.log(result); // Output: 120
