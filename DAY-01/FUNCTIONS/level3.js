@@ -113,3 +113,15 @@ console.log(isEmpty({})); // Output: true
 console.log(isEmpty('hello')); // Output: false
 console.log(isEmpty([1, 2, 3])); // Output: false
 console.log(isEmpty({ name: 'John', age: 30 })); // Output: false
+
+
+
+function average(arr) {
+    if (arr.some((item) => typeof item !== "number")) {
+      return "The array contains non-number elements.";
+    }
+    return (
+      arr.reduce((total, current) => total + current) / arr.length
+    );
+  }
+  
