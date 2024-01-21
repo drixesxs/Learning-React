@@ -87,3 +87,29 @@ function factorial(num) {
 const number = 5;
 const result = factorial(number);
 console.log(result); // Output: 120
+
+
+
+function isEmpty(param) {
+    if (param === undefined || param === null) {
+        return true;
+    } else if (typeof param === 'string' && param.trim() === '') {
+        return true;
+    } else if (Array.isArray(param) && param.length === 0) {
+        return true;
+    } else if (typeof param === 'object' && Object.keys(param).length === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Example usage:
+console.log(isEmpty()); // Output: true
+console.log(isEmpty(null)); // Output: true
+console.log(isEmpty('')); // Output: true
+console.log(isEmpty([])); // Output: true
+console.log(isEmpty({})); // Output: true
+console.log(isEmpty('hello')); // Output: false
+console.log(isEmpty([1, 2, 3])); // Output: false
+console.log(isEmpty({ name: 'John', age: 30 })); // Output: false
